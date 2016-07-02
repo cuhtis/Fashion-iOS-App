@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="seeMoreHeader" id="gTV-IL-0wX" customClass="SeeMore_GrowHeader" customModule="NotifyNearby" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="200"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="foG-NY-rvi">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="ABq-vo-jza"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand Name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiI-DB-JsP">
+                        <rect key="frame" x="8" y="139" width="484" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="USK-o5-nYC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xnt-s7-N3n">
+                        <rect key="frame" x="200" y="40" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="5ET-kW-xjN"/>
+                            <constraint firstAttribute="width" constant="100" id="LDb-23-HEM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="xnt-s7-N3n" firstAttribute="centerX" secondItem="DiI-DB-JsP" secondAttribute="centerX" id="6vf-ya-shM"/>
+                <constraint firstAttribute="trailing" secondItem="foG-NY-rvi" secondAttribute="trailing" id="GZC-St-2tU"/>
+                <constraint firstItem="xnt-s7-N3n" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-10" id="L9T-13-nNd"/>
+                <constraint firstItem="DiI-DB-JsP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Lzh-T9-ZX3"/>
+                <constraint firstItem="foG-NY-rvi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WuQ-Kg-SSX"/>
+                <constraint firstItem="foG-NY-rvi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="X2a-Y6-w7j"/>
+                <constraint firstItem="DiI-DB-JsP" firstAttribute="top" secondItem="xnt-s7-N3n" secondAttribute="bottom" constant="-1" id="lu1-99-KXH"/>
+                <constraint firstItem="xnt-s7-N3n" firstAttribute="centerX" secondItem="foG-NY-rvi" secondAttribute="centerX" id="oFN-X4-enc"/>
+            </constraints>
+            <size key="customSize" width="500" height="200"/>
+            <connections>
+                <outlet property="backgroundImage" destination="foG-NY-rvi" id="WH4-58-2su"/>
+                <outlet property="brandName" destination="DiI-DB-JsP" id="6Jk-9b-zCJ"/>
+                <outlet property="constraintBgHeight" destination="ABq-vo-jza" id="U8j-vy-dye"/>
+                <outlet property="logoImage" destination="xnt-s7-N3n" id="Pl1-cg-eDN"/>
+            </connections>
+            <point key="canvasLocation" x="427" y="236"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Pic.jpg" width="1280" height="1288"/>
+    </resources>
+</document>

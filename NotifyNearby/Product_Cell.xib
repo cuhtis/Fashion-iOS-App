@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Product_Cell" customModule="NotifyNearby" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOe-Ax-Dq7">
+                        <rect key="frame" x="8" y="225" width="184" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Y5D-OZ-DnC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef6-mO-ua6">
+                        <rect key="frame" x="8" y="203" width="184" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="96u-fz-avn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="s1E-9P-dc7">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rOe-Ax-Dq7" secondAttribute="bottom" constant="4" id="0TK-MW-Qv8"/>
+                <constraint firstItem="ef6-mO-ua6" firstAttribute="leading" secondItem="rOe-Ax-Dq7" secondAttribute="leading" id="4dC-cI-G6u"/>
+                <constraint firstItem="ef6-mO-ua6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="5dj-wP-u3j"/>
+                <constraint firstItem="s1E-9P-dc7" firstAttribute="centerX" secondItem="ef6-mO-ua6" secondAttribute="centerX" id="7St-NC-wjW"/>
+                <constraint firstItem="rOe-Ax-Dq7" firstAttribute="top" secondItem="ef6-mO-ua6" secondAttribute="bottom" constant="1" id="JAm-s0-6Aw"/>
+                <constraint firstItem="ef6-mO-ua6" firstAttribute="trailing" secondItem="rOe-Ax-Dq7" secondAttribute="trailing" id="SqJ-87-ych"/>
+                <constraint firstAttribute="trailing" secondItem="s1E-9P-dc7" secondAttribute="trailing" id="Zwj-UK-bMT"/>
+                <constraint firstItem="ef6-mO-ua6" firstAttribute="top" secondItem="s1E-9P-dc7" secondAttribute="bottom" constant="3" id="xz8-Jb-Erx"/>
+                <constraint firstItem="s1E-9P-dc7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ze2-5O-AC7"/>
+                <constraint firstItem="s1E-9P-dc7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zh0-Co-WZD"/>
+            </constraints>
+            <size key="customSize" width="200" height="251"/>
+            <connections>
+                <outlet property="productImage" destination="s1E-9P-dc7" id="FeJ-EK-1Xl"/>
+                <outlet property="productName" destination="ef6-mO-ua6" id="EXU-QM-Zvv"/>
+                <outlet property="productPrice" destination="rOe-Ax-Dq7" id="2FZ-SW-Thq"/>
+            </connections>
+            <point key="canvasLocation" x="214" y="328.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Pic.jpg" width="1280" height="1288"/>
+    </resources>
+</document>

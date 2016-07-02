@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="416" id="KGk-i7-Jjw" customClass="Brand_TableViewCell" customModule="NotifyNearby" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="529" height="416"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="529" height="415.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0zb-ws-ghG">
+                        <rect key="frame" x="0.0" y="0.0" width="529" height="277"/>
+                    </imageView>
+                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5b-fe-sSu">
+                        <rect key="frame" x="16" y="231" width="99" height="99"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="99" id="7pG-av-c6p"/>
+                            <constraint firstAttribute="height" constant="99" id="Y4R-fa-SET"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" image="x">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <connections>
+                            <action selector="pressBrand" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Spm-48-ytp"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovy-L5-7WZ">
+                        <rect key="frame" x="123" y="285" width="360" height="36"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                        <state key="normal" title="Brand Name">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="pressBrand" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xkv-kt-5gf"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description - Brand is blah blah blah blah blah blah blah blah blah blah blah blah" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-zg-StL">
+                        <rect key="frame" x="16" y="362" width="496" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="xCp-rT-0Md"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycN-PO-RJG">
+                        <rect key="frame" x="16" y="339" width="505" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoa-vP-uiU">
+                        <rect key="frame" x="482" y="289" width="30" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Z8U-sO-5Ut"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="heart"/>
+                        <connections>
+                            <action selector="pressLikeButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fP5-3P-8kE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Uoa-vP-uiU" firstAttribute="top" secondItem="0zb-ws-ghG" secondAttribute="bottom" constant="12" id="4Q7-x6-8Ih"/>
+                    <constraint firstAttribute="bottom" secondItem="ovy-L5-7WZ" secondAttribute="bottom" constant="94.5" id="Ja0-z6-xcB"/>
+                    <constraint firstItem="l7V-zg-StL" firstAttribute="top" secondItem="ycN-PO-RJG" secondAttribute="bottom" constant="2" id="KFE-uZ-uXz"/>
+                    <constraint firstItem="ovy-L5-7WZ" firstAttribute="top" secondItem="0zb-ws-ghG" secondAttribute="bottom" constant="8" symbolic="YES" id="Msk-Da-4Bs"/>
+                    <constraint firstAttribute="trailing" secondItem="0zb-ws-ghG" secondAttribute="trailing" id="VOP-9x-0wA"/>
+                    <constraint firstItem="ovy-L5-7WZ" firstAttribute="centerY" secondItem="Uoa-vP-uiU" secondAttribute="centerY" id="Vfj-bD-Mtc"/>
+                    <constraint firstItem="ycN-PO-RJG" firstAttribute="top" secondItem="I5b-fe-sSu" secondAttribute="bottom" constant="9" id="ZgQ-Yy-oHi"/>
+                    <constraint firstItem="ycN-PO-RJG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="aEp-l5-HP4"/>
+                    <constraint firstItem="0zb-ws-ghG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aOQ-M1-5R7"/>
+                    <constraint firstItem="0zb-ws-ghG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aaU-aa-HH0"/>
+                    <constraint firstItem="l7V-zg-StL" firstAttribute="centerX" secondItem="0zb-ws-ghG" secondAttribute="centerX" id="bKX-Gj-1sJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="l7V-zg-StL" secondAttribute="bottom" constant="3.5" id="cGV-mt-3hA"/>
+                    <constraint firstItem="ycN-PO-RJG" firstAttribute="leading" secondItem="I5b-fe-sSu" secondAttribute="leading" id="hXc-x3-f28"/>
+                    <constraint firstItem="ycN-PO-RJG" firstAttribute="top" secondItem="ovy-L5-7WZ" secondAttribute="bottom" constant="18" id="jpu-be-uUI"/>
+                    <constraint firstItem="ovy-L5-7WZ" firstAttribute="leading" secondItem="I5b-fe-sSu" secondAttribute="trailing" constant="8" symbolic="YES" id="lhF-Hs-TLt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Uoa-vP-uiU" secondAttribute="trailing" constant="9" id="lku-dk-kW9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ovy-L5-7WZ" secondAttribute="trailing" constant="38" id="mZB-mG-e1t"/>
+                    <constraint firstItem="l7V-zg-StL" firstAttribute="leading" secondItem="ycN-PO-RJG" secondAttribute="leading" id="nFI-q5-P8a"/>
+                    <constraint firstItem="I5b-fe-sSu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="z3P-X0-pjP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="brandNameButton" destination="ovy-L5-7WZ" id="eQw-I5-RBO"/>
+                <outlet property="descText" destination="l7V-zg-StL" id="3Og-lS-eIk"/>
+                <outlet property="descTitle" destination="ycN-PO-RJG" id="Ej7-yC-ecq"/>
+                <outlet property="likeButton" destination="Uoa-vP-uiU" id="n5C-Xj-hPL"/>
+                <outlet property="logoButton" destination="I5b-fe-sSu" id="fjy-FA-ZK1"/>
+                <outlet property="posterImageView" destination="0zb-ws-ghG" id="WMN-OB-tJL"/>
+            </connections>
+            <point key="canvasLocation" x="517.5" y="550"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Pic.jpg" width="1280" height="1288"/>
+        <image name="heart" width="34" height="27"/>
+        <image name="x" width="24" height="21"/>
+    </resources>
+</document>
